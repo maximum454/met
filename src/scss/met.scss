@@ -1,0 +1,114 @@
+@import "./partials/normalize";
+@import "./partials/remodal";
+@import "./partials/remodal-default-theme";
+@import "mixin";
+@import "fonts";
+@import "buttons";
+@import "form";
+@import "remodal";
+@import "icon";
+@import "text";
+@import "tabs";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B1F22;
+  font-family: $font1;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #0769AD;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #00B39B;
+  }
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+
+.wrp {
+  position: relative;
+}
+
+
+.container {
+  max-width: 1346px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  @include r(1023){
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+a {
+  transition: .3s ease;
+  text-decoration: none;
+  color: #FF3E41;
+
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-desktop-none {
+  display: none;
+  @include r(767) {
+    display: block;
+  }
+}
+
+.d-mobile-none {
+  display: block;
+  @include r(767) {
+    display: none !important;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+
+}
+
+
+@import "componets/header";
+@import "componets/footer";
+
+
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    @@include('./template/_meta.html',{
+    "title": "MET - Главная",
+    "description": "Точность без компромисcов",
+    })
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/met.css">
+</head>
+
+<body>
+<div class="wrp">
+
+    @@include('./template/_header.html',{"nav": "Y"})
+    <main class="main">
+        <section class="all-scales">
+
+        </section>
+
+        <section class="sensors">
+
+        </section>
+
+        <section class="main-scales">
+
+        </section>
+
+        <section class="protection">
+
+        </section>
+
+        <section class="products">
+
+        </section>
+
+        <section class="arguments">
+
+        </section>
+
+        <section class="production">
+
+        </section>
+
+        <section class="infocenter"></section>
+    </main>
+    @@include('./template/_footer.html',{ })
+    @@include('./template/_modal.html',{ })
+</div>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/met.js"></script>
+</body>
+
+</html>
